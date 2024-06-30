@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="alien" class="com.harish.Alien">
+        <property name="age" value="23"></property>
+        <property name="com" ref="lapobj"></property>
+
+<!--        <constructor-arg type = "com.harish.Laptop" ref="lapobj"/>-->
+<!--        <constructor-arg type="int" value="23"/>-->
+
+<!--        <constructor-arg index="1" ref="lapobj"/>-->
+<!--        <constructor-arg index="0" value="23"/>-->
+
+    </bean>
+    <bean id="lapobj" class="com.harish.Laptop"></bean>
+</beans>
